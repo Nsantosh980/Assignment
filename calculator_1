@@ -1,0 +1,28 @@
+#Define fun() for addition
+def add(num1,num2):
+    return num1+num2
+#Definr fun() for subtraction
+def sub(num1,num2):
+    return num1-num2
+#Define fun() for multiply
+def multiply(num1,num2):
+    return num1*num2
+#Define fun() for division 
+def divide(num1,num2):
+    return num1/num2
+
+#Taking input values from user
+num1=float(input("Enter num1 :"))
+operator=input("Enter operator(+,-,*,/):")
+num2=float(input("Enter num2 :"))
+
+if operator=="+":
+    print(num1,"+",num2,"=",add(num1,num2))
+elif operator=="-":
+    print(num1,"-",num2,"=",sub(num1,num2))
+elif operator=="*":
+    print(num1,"*",num2,"=",multiply(num1,num2))
+elif operator=="/":
+    print(num1,"/",num2,"=",divide(num1,num2))
+else:
+    print("Invalid operator")
